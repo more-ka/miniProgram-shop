@@ -1,1 +1,12 @@
 /* pages/home/home.wxss */
+.container1{
+  background: aqua;
+  white-space: nowrap;
+}
+view{
+  height: 100px;
+  width: 100px;
+  background: orange;
+  display: inline-block;
+  margin: 10px;
+}

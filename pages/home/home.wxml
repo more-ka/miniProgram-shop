@@ -1,2 +1,7 @@
 <!--pages/home/home.wxml-->
-<text>home页面</text>
+
+<!-- <scroll-view class="container1" scroll-x>
+<view wx:for="{{10}}">{{item}}</view>
+</scroll-view>
+
+<view class="{{iaActive}}">123</view> -->
