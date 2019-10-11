@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-swiper": "/components/w-swiper/w-swiper"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 30,
+  "navigationBarTitleText": "商城"
 }

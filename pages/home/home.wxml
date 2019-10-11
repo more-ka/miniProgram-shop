@@ -1,2 +1,1 @@
-<!--pages/home/home.wxml-->
-<text>home页面</text>
+<w-swiper list="{{banners}}"></w-swiper>
