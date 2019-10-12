@@ -1,0 +1,5 @@
+/* components/w-goods/w-goods.wxss */
+.goods-item{
+  width: 48%;
+  margin-top: 16rpx;
+}

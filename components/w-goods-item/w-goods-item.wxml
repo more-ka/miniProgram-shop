@@ -1,0 +1,4 @@
+<!-- components/w-goods-item/w-goods-item.wxml -->
+<image src="{{item.img}}" mode="widthFix"></image>
+<text class="goods-name">{{item.name}}</text>
+<text class="goods-price">¥ {{item.price}}</text>

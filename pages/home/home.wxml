@@ -1,1 +1,22 @@
-<w-swiper list="{{banners}}"></w-swiper>
+<view class="home">
+  <view class="header">
+    <view class="navigate">
+      <view class="category">分类</view>
+      <view class="search">
+        <input class="searchInfo" type="text" placeholder="iphone 11" confirm-type="search"></input>
+      </view>
+    </view>
+    <view class="hotSearch">
+      热搜
+      <text>毛衣</text>
+      <text>羽绒服</text>
+      <text>篮球</text>
+      <text>橘子</text>
+    </view>
+    <w-swiper class="w-swiper" list="{{banners}}"></w-swiper>
+  </view>
+  <view class="recommend clearfix">
+    <text class="title">热门商品</text>
+    <w-goods list="{{hotList}}" class="goods"></w-goods>
+  </view>
+</view>

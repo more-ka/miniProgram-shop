@@ -1,6 +1,6 @@
-<swiper class="swiper" circular indicator-dots duration="300" interval="3000" autoplay>
+<swiper class="swiper" circular indicator-dots duration="300" interval="3000" autoplay indicator-color="rgba(255, 255, 255, 0.3)" indicator-active-color="rgba(255, 255, 255,0.9)">
   <block wx:for="{{list}}" wx:key="{{index}}">
     <swiper-item class="swiper-item">
-      <image src="{{item.img}}" mode=""/>
+      <image src="{{item.img}}" mode="center"/>
     </swiper-item></block>
 </swiper>

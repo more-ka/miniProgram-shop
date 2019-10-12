@@ -1,0 +1,24 @@
+/* components/w-goods-item/w-goods-item.wxss */
+image{
+  width: 100%;
+  display: block;
+  border-radius: 8rpx;
+}
+text{
+  display: inline-block;
+  height: 48rpx;
+  line-height: 48rpx;
+}
+.goods-name{
+  width: 55%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.goods-price{
+  width: 40%;
+  color: red;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

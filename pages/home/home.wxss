@@ -1,12 +1,81 @@
 /* pages/home/home.wxss */
-.container1{
-  background: aqua;
-  white-space: nowrap;
+view,text{
+  box-sizing: border-box;
 }
-view{
-  height: 100px;
-  width: 100px;
-  background: orange;
-  display: inline-block;
-  margin: 10px;
+.clearfix{
+  content: '';
+  display: block;
+  clear: both;
+}
+.header {
+  background: rgba(228, 31, 25);
+  height: 480rpx;
+  color: white;
+  padding: 28rpx;
+  margin-bottom: 100rpx;
+}
+
+.navigate {
+  display: flex;
+  align-items: center;
+  margin-left: 16rpx;
+  margin-right: 60rpx;
+
+}
+
+.navigate .category{
+  flex: 1.5;
+}
+ 
+.navigate .search{
+  flex: 8.5;
+}
+
+.navigate input {
+  border: 1px solid rgba(228, 31, 25);
+  background: white;
+  border-radius: 44rpx;
+  padding: 8rpx 32rpx;
+}
+.hotSearch{
+  justify-content: center;
+  font-size: 24rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 24rpx 0;
+}
+.hotSearch text{
+  flex: 1;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 24rpx;
+  line-height: 48rpx;
+  margin: 0 8rpx;
+  padding: 0 12rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.w-swiper {
+  display: block;
+  border-radius: 8rpx;
+  overflow: hidden;
+  margin-top: 32rpx;
+}
+.recommend{
+  padding: 28rpx;
+  width: calc(100%-28rpx);
+}
+.recommend .title{
+  font-weight: 600;
+  height: 80rpx;
+  display: block;
+}
+
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

@@ -11,8 +11,5 @@ App({
   },
   // 小程序产生错误时
   onError: function (msg) {  
-  },
-  globalData:{
-    name: 'monkeySun'
   }
 })

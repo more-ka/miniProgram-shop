@@ -36,6 +36,7 @@
   },
   "sitemapLocation": "sitemap59.json",
   "window": {
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "white"
   }
 }

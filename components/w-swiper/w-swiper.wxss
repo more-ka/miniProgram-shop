@@ -1,1 +1,9 @@
 /* components/w-swiper/w-swiper.wxss */
+.swiper{
+  height: 360rpx;
+}
+.swiper-item image{
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+}
