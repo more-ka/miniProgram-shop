@@ -19,4 +19,5 @@
     <text class="title">热门商品</text>
     <w-goods list="{{hotList}}" class="goods"></w-goods>
   </view>
+  <w-back-top wx:if="{{showBackTop}}" />
 </view>

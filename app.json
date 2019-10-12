@@ -37,6 +37,6 @@
   "sitemapLocation": "sitemap59.json",
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "white"
+    "navigationBarBackgroundColor": "#fff"
   }
 }

@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "w-swiper": "/components/w-swiper/w-swiper",
-    "w-goods": "../../components/w-goods/w-goods"
+    "w-goods": "../../components/w-goods/w-goods",
+    "w-back-top": "../../components/w-back-top/w-back-top"
   },
   "enablePullDownRefresh": true,
   "onReachBottomDistance": 200,
