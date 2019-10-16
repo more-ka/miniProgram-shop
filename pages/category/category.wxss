@@ -87,3 +87,29 @@
   margin: 8rpx;
   font-size: 12px;
 }
+
+.categoryList .title,
+.brandList .title{
+  font-size: 16px;
+  display: block;
+  font-weight: bold;
+  width: 100%;
+  padding: 20rpx 0;
+}
+.sublist >view{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+}
+.sublist .item{
+  width: 32%;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+/* 完成布局 */
+.sublist .item image{
+  width: 130rpx;
+  height: 130rpx;
+  display: block;
+  margin: 0 auto 8rpx;
+}
