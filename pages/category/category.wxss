@@ -1,1 +1,89 @@
 /* pages/category/category.wxss */
+
+.category {
+  display: flex;
+  height: 100%;
+}
+
+.category .banner {
+  width: 200rpx;
+  margin-right: 24rpx;
+  background: rgba(240, 240, 240,0.5);
+}
+
+.banner .categoryItem {
+  text-align: center;
+  padding: 28rpx 0;
+}
+
+.banner .categoryItem.active {
+  color: red;
+  background: #ffffff;
+}
+
+.category .body {
+  flex: 1;
+}
+
+.body>view>.title {
+  font-size: 32rpx;
+  padding: 20rpx 0;
+  display: inline-block;
+  font-weight: bold;
+  width: 100%;
+}
+
+.hotGood {
+  display: flex;
+  margin-bottom: 12rpx;
+}
+
+/* 商品标题垂直居中 */
+.hotGood image {
+  width: 180rpx;
+  height: 180rpx;
+  display: inline-block;
+  margin-right: 28rpx;
+}
+
+.hotGood .content {
+  flex: 1;
+}
+
+.hotGood .content text {
+  display: block;
+  flex: 1;
+  line-height: 24px;
+}
+
+.hotGood .content .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hotGood .content .recommend,
+.hotShop .hotShopFollows {
+  color: grey;
+}
+.hotShop .shopImgs{
+  display: flex;
+  margin: 16rpx;
+  margin-left: -16rpx;
+  justify-content: space-between;
+}
+.hotShop .shopImg {
+  text-align: center;
+  flex: 1;
+  width: 136rpx;
+  height: 136rpx;
+  display: inline-block;
+}
+.hotKeywords text{
+  border: 1px solid rgba(240, 240, 240,0.8);
+  padding: 10rpx 12rpx;
+  border-radius: 8rpx;
+  display: inline-block;
+  margin: 8rpx;
+  font-size: 12px;
+}

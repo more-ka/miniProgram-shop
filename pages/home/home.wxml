@@ -16,7 +16,7 @@
     <w-swiper class="w-swiper" list="{{banners}}"></w-swiper>
   </view>
   <view class="recommend clearfix">
-    <text class="title">热门商品</text>
+    <text class="title">推荐商品</text>
     <w-goods list="{{hotList}}" class="goods"></w-goods>
   </view>
   <w-back-top wx:if="{{showBackTop}}" />

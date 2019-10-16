@@ -1,2 +1,39 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<!-- pages/category/category.wxml -->
+<view class="category">
+  <view class="banner">
+    <block wx:for="{{topList}}" wx:key="{{index}}">
+      <view class="categoryItem active">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="body" wx:if="{{recommend}}">
+    <view class="hotGoods">
+      <text class="title">热销商品榜</text>
+      <view class="hotGood" wx:for="{{rank.hotGoods}}" wx:key="{{index}}">
+        <image src="{{item.img}}" />
+        <view class="content">
+          <text class="title">{{item.name}}</text>
+          <text class="price">¥ {{item.price}}</text>
+          <text class="recommend">推荐值: {{item.recommend}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="hotShops">
+      <text class="title">热销商品榜</text>
+      <view class="hotShop" wx:for="{{rank.hotShops}}" wx:key="{{index}}">
+        <text class="hotShopName">{{item.name}}</text>
+        <text class="hotShopFollows">/关注:{{item.follows}}</text>
+        <view class="shopImgs">
+          <block wx:for="{{item.imgs}}" wx:for-item="imgUrl" wx:key="{{index}}">
+            <view class="shopImg">
+              <image class="shopImg" src="{{imgUrl}}" />
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class="hotKeywords">
+      <text class="keyword" wx:for="{{rank.hotKeywords}}" wx:key="{{index}}">{{item}}</text>
+    </view>
+  </view>
+
+</view>

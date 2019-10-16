@@ -1,18 +1,37 @@
 // pages/category/category.js
+
+import {getCategoryTopList, getCategoryRank, getCategorySublist} from '../../service/api.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    topList: [],
+    rank: {},
+    subList: {},
+    recommed: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    getCategoryTopList().then((res)=>{
+      this.setData({
+        topList: res.data.lists
+      })
+    })
+    getCategoryRank().then((res)=>{
+      this.setData({
+        rank: res.data.data
+      })
+    })
+    getCategorySublist().then((res)=>{
+      this.setData({
+        subList: res.data.data
+      })
+    })
   },
 
   /**
