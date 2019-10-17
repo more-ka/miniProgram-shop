@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/cart/cart",
     "pages/category/category",
     "pages/home/home",
-    "pages/cart/cart",
     "pages/profile/profile"
   ],
   "tabBar": {

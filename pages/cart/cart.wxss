@@ -1,1 +1,53 @@
 /* pages/cart/cart.wxss */
+.clearfix{
+  content: '';
+  display: block;
+  clear: both;
+}
+.cart .cartList{
+}
+.cart .shopTitle {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 20rpx 0;
+}
+.cart .goods{
+  display: flex;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.cart .goods image{
+  /* float:/ left; */
+  height: 180rpx;
+  width: 180rpx;
+  /* display: inline-block; */
+}
+.cart .goods .content{
+  flex: 1;
+  padding: 8rpx 20rpx;
+  width: calc(100%-90px);
+}
+.goods .goodsTitle{
+  font-size: 14px;
+  display: block;
+}
+.goods .goodsSku{
+  color: gray;
+  font-size: 14px;
+}
+.goods .goodsPrice{
+  position: absolute;
+  left: 200rpx;
+  bottom: 12rpx;
+  border-style: none;
+  color: gray;
+  font-size: 14px;
+}
+.goods .goodsNumber{
+  position: absolute;
+  right: 20rpx;
+  bottom: 12rpx;
+  color: gray;
+  font-size: 14px;
+}

@@ -31,7 +31,11 @@ export function getCategorySublist(){
 }
 
 // 购物车请求
-
+export function getCartList(){
+  return service({
+    url: '/cart/list'
+  })
+}
 
 
 

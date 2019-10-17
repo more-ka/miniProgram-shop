@@ -1,18 +1,23 @@
 // pages/cart/cart.js
+import {getCartList} from '../../service/api.js'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    cartList: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    getCartList().then((res)=>{
+      this.setData({
+        cartList: res.data.cartList
+      })
+    })
   },
 
   /**

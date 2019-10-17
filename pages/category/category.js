@@ -2,20 +2,12 @@
 
 import {getCategoryTopList, getCategoryRank, getCategorySublist} from '../../service/api.js'
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     topList: [],
     rank: {},
     subList: {},
-    recommed: ''
+    currentIndex: 0
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
     getCategoryTopList().then((res)=>{
       this.setData({
@@ -81,5 +73,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  categoryClick(e){
+    this.setData({
+      currentIndex: e.currentTarget.dataset.index
+    })
   }
 })

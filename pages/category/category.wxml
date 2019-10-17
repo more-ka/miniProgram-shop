@@ -2,10 +2,10 @@
 <view class="category">
   <view class="banner">
     <block wx:for="{{topList}}" wx:key="{{index}}">
-      <view class="categoryItem active">{{item.name}}</view>
+      <view class="categoryItem {{currentIndex===index?'active':''}}" bind:tap="categoryClick" data-index="{{index}}">{{item.name}}</view>
     </block>
   </view>
-  <view class="body" wx:if="{{recommend}}">
+  <view class="body" wx:if="{{currentIndex===0}}">
     <view class="hotGoods">
       <text class="title">热销商品榜</text>
       <view class="hotGood" wx:for="{{rank.hotGoods}}" wx:key="{{index}}">
@@ -37,14 +37,14 @@
   </view>
   <view class="sublist" wx:else>
     <view class="categoryList">
-      <text class="title">分类</text>
+      <text class="title">商品分类</text>
       <view class="item" wx:for="{{subList.categoryList}}" wx:key="{{index}}">
         <image class="categoryListImg" src="{{item.img}}" />
         <text class="categoryListName">{{item.name}}</text>
       </view>
     </view>
     <view class="brandList">
-      <text class="title">分类</text>
+      <text class="title">品牌分类</text>
       <view class="item" wx:for="{{subList.brandList}}" wx:key="{{index}}">
         <image class="brandListImg" src="{{item.img}}" />
         <text class="brandListtName">{{item.name}}</text>
@@ -52,3 +52,6 @@
     </view>
   </view>
 </view>
+
+
+<!-- 商品详情页面, 购物车, 用户信息页面 -->

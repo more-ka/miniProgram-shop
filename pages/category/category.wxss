@@ -1,5 +1,4 @@
 /* pages/category/category.wxss */
-
 .category {
   display: flex;
   height: 100%;
@@ -24,7 +23,9 @@
 .category .body {
   flex: 1;
 }
-
+.category .sublist {
+  flex: 1;
+}
 .body>view>.title {
   font-size: 32rpx;
   padding: 20rpx 0;
@@ -36,6 +37,7 @@
 .hotGood {
   display: flex;
   margin-bottom: 12rpx;
+  margin-left: 24rpx;
 }
 
 /* 商品标题垂直居中 */
@@ -54,6 +56,7 @@
   display: block;
   flex: 1;
   line-height: 24px;
+  max-width: 240rpx;
 }
 
 .hotGood .content .title {
@@ -69,7 +72,6 @@
 .hotShop .shopImgs{
   display: flex;
   margin: 16rpx;
-  margin-left: -16rpx;
   justify-content: space-between;
 }
 .hotShop .shopImg {
@@ -87,6 +89,7 @@
   margin: 8rpx;
   font-size: 12px;
 }
+
 
 .categoryList .title,
 .brandList .title{
@@ -108,8 +111,8 @@
 }
 /* 完成布局 */
 .sublist .item image{
-  width: 130rpx;
-  height: 130rpx;
+  width: 120rpx;
+  height: 120rpx;
   display: block;
   margin: 0 auto 8rpx;
 }
